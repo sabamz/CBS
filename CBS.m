@@ -1,4 +1,5 @@
 function [Phenotype,values] = CBS(Geno, kt, p,eft,RF)
+%Geno is the Genotype information- kt and p are parameters of the CBS method- eft is the effect vector- RF is the recombination frequency
 rp = randperm(369);
 Geno = Geno(:,:,rp(1:200)); %Select 200 indiviuals
 HT = 10;  %Total number of generations
