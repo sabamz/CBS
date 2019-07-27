@@ -1,8 +1,8 @@
 load('Data369');
 Geno=Geno369;
-kt=2;
-p=0.7;
-n=10;
+kt=2;   %Coefficient of k (number of crosses)
+p=0.7;  %Scaling factor in the CBS method
+n=100;  %Number of Simulation Replications
 for i=1:n
     CBS(Geno,kt,p, eft, RF);
     resultPheno{1,i}=Phenotype;
